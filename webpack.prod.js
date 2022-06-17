@@ -62,10 +62,16 @@ module.exports = {
     plugins: [
         new HtmlWebpack({
             title: 'Mi Webpack App',
-            // filename: 'index.html',
+            filename: 'index.html',
             template: './src/index.html'
         }),
-        
+
+        // new HtmlWebpack({
+        //     title: 'PROMISES RACE',
+        //     filename: 'race.html',
+        //     template: './src/race.html'
+        // }),
+
         new MiniCssExtract({
             filename: '[name].[fullhash].css',
             ignoreOrder: false

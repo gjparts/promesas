@@ -40,7 +40,7 @@ module.exports = {
     plugins: [
         new HtmlWebpack({
             title: 'Mi Webpack App',
-            // filename: 'index.html',
+            filename: 'index.html',
             template: './src/index.html'
         }),
         
@@ -51,7 +51,8 @@ module.exports = {
 
         new CopyPlugin({
             patterns: [
-                { from: 'src/assets/', to: 'assets/' }
+                { from: 'src/assets/', to: 'assets/' },
+                { from: 'src/race.html', to: 'race.html' }
             ]
         })
     ]
